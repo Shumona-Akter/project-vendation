@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendnation</title>
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <!-- lakeside defaut -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <!-- oswlad font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- robot font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awsome kit -->
+    <script src="https://kit.fontawesome.com/a51f7db7fc.js" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+      <div id="all-btn-modal" class="main-display-login-form d-none" >
+        <div class="login-form-all-btn">
+          <div class="dispay-log-form">
+            <div class="all-form-left">
+              <h1>Get in touch</h1>
+              <div action="">
+                <label>first name <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Name of Venue/Brand <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Location <span>*</span></label>
+                <input type="text" placeholder="Write here">
+                <label>Message <span>*</span></label>
+                <textarea id="text-area"   placeholder="Write here"></textarea>
+                <p>250 characters max</p>
+                <button id="submit">Send</button>
+              </div>
+            </div>
+            <div class="all-form-right">
+              <img src="./images/login-img.png" alt="">
+            </div>
+          </div>
+          <div class="all-btn-close-btn" id="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+  
+        </div>
+      </div>
+        <!-- desktop nav -->
+        <nav class="navbar navbar-expand-lg navbar-light violate-bg nav-position-fixed">
+            <div class="container">
+              <img src="./images/logo.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item" >
+                    <a class="nav-link active menu-a text-white px-3" aria-current="page" href="#how-we-work">how it works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-a menu-a text-white px-3" href="#your-benefits">your benefits</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-a menu-a text-white px-3" href="#paradise">case studies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-a menu-a text-white px-3" href="#our-three-steps">about us</a>
+                  </li>
+                  <li class="nav-item" onclick="modalAllBtn()" id="nav-boots" >
+                    <a class="nav-link menu-a menu-a text-white px-3" >contact us</a>
+                  </li>
+                  
+                  <div class="d-flex align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link menu-a menu-a menu-btn text-black px-4" onclick="modalAllBtn()">get a free booth</a>
+                      </li>
+                    </div>
+                </ul>
+              </div>
+            </div>
+            <div id="free-boots-display" class="d-none">
+              <div class="login-page container d-block d-md-block">
+                <div class="login-main">
+                  <div class="form">
+                    <h1 class="main-heading">Get in touch</h1>
+                    <div action="">
+                      <label for="">First Name <span>*</span></label>
+                      <input type="text" placeholder="Write here">
+                      <label for="">Name of Venue/Brand <span>*</span></label>
+                      <input type="text" placeholder="Write here">
+                      <label for="">Location  <span>*</span></label>
+                      <input type="text" placeholder="Write here">
+                      <label for="">Message <span>*</span></label>
+                      
+                      <textarea name="" id="" placeholder="Write here"></textarea>
+                      <p>250 characters max</p>
+                      <button type="submit" id="contac-submit">Send</button>
+                      <div id="login-close-sm" class="log-item-icon d-block d-md-none">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+    
+                    </div>
+                  </div>
+                  <div  class="img-login d-none d-lg-block">
+                    <img src="./images/Content/content-7.jpeg" alt="">
+                    <div id="login-close" class="log-item-icon">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </nav>
+          
+
+          <!-- banner -->
+          <!-- desktop -->
+          <section id="banner" class="d-none d-lg-block">
+            <div class="container banner-img">
+              <video autoplay loop muted plays-inline>
+                <source src="./images/promo.mp4">
+              </video>
+                <p class="display-4">The future is here</p>
+                <p class="main-heding ">Snap up a bespoke photo <span class="d-lg-block">booth at zero cost.</span> </p>
+                
+
+                <div class="venubox-bg">
+                  <a class="venobox" data-gall="true" data-vbtype="iframe"  href="./images/promo.mp4" >
+                    <span class="menu-a menu-btn text-black px-4" href="">Discover more</a>
+                  </span>
+                  </a>
+                </div>
+            </div>  
+            
+            
+          </section>
+
+          <section id="banner" class="d-block d-lg-none">
+            <div class="container px-3 px-sm-0">
+                <div class="banner-img-sm">
+                  <video autoplay loop muted plays-inline>
+                    <source src="./images/promo.mp4">
+                  </video>
+                  <p class="display-4">The future is here</p>
+                <p class="main-heding ">Snap up a <br> bespoke photo <br> booth at zero <br> cost. </p>
+                <div class="venubox-bg">
+                  <a class="venobox" data-gall="true" data-vbtype="iframe" href="/images/promo.mp4">
+                    <span class="menu-a menu-btn text-black px-4" href="">Discover more</a>
+                  </span>
+                  </a>
+                </div>
+                </div>
+            </div>    
+           
+          </section>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section id="how-we-work">
+           <div id="how-work">
+            <div class="container text-start text-md-center px-3">
+              <div >
+                  <div class="d-block d-md-none">
+                      <h1 class="main-heading">How we work with <span class="d-block ">you</span></h1>
+                  </div>
+                  <div class="d-none d-md-block">
+                      <h1 class="main-heading">How we work with you</h1>
+                  </div>
+                  <div class="mx-md-5 px-lg-5">
+                      <p class="para-work">So you know you have a fantastic venue, high footfall and a loyal customer base - now, how do you enhance all of that, without any investment costs?  That's where we come in.
+
+                          <span class="d-block para-work py-4 py-lg-5">As one of the leading suppliers of business-branded photo booths, partnering with us is a sure way to elevate your customer experience, boost your socials, grow your marketing data and rocket your monthly revenue.</span>
+                          
+                          <span class="d-block para-work"> In 2023, our custom-built photo booths can be found at more than 170 venues and events in the UK and Europe, and the best part? 
+                              Not one of those venues has paid us a penny for the design, delivery or installation of their machine - in fact, we pay them.</span></p>
+                          <div>
+                              <a class="menu-a menu-btn text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Secure your workshop slot</a>
+                              <a  class="d-block see-work   pb-5 mb-2 text-black">See our work</a>
+                          </div>
+                  </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <section>
+          <!-- work slider -->
+          <div class="work-position">
+              <div class="work-slider-first">
+                <div class="work-slider">
+                  <div class="slide-img">
+                    <img src="./images/Content/content-1.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-2.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-3.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-4.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-5.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-6.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-7.jpeg" alt="">
+                  </div>
+                  <div class="slide-img">
+                    <img src="./images/Content/content-8.jpeg" alt="">
+                  </div>
+                </div>
+               </div>
+
+               <div class="white-frame-position d-none d-lg-block">
+
+               </div>
+           </div>
+        </section>
+        
+
+        <!-- our hree steps procccess -->
+        <section id="our-three-steps">
+          <div class="threesteps-bg">
+            <div class="container">
+              <h1 class="main-heading text-center d-md-none">Our Three-Step <span class="d-block ">proccces</span></h1>
+              <h1 class="main-heading text-center d-none d-md-block">Our Three-Step proccces</h1>
+              <div class="Three-Step-slider">
+                <div class="steps">
+                  <h1>Enquire</h1>
+                  <h3>Drop us a DM!</h3>
+                  <p>When you enquire, we'll need to know some basic information about your business, including; Name, Location, Capacity, Average Footfall and Number of Monthly Events.</p>
+                </div>
+                <div class="steps">
+                  <h1>Design</h1>
+                  <h3>Brand it, baby! </h3>
+                  <p>We'll get to work on your bespoke design, ensuring that everything from the external wrapping to the internal software is made to match your brand identity and fit the space.</p>
+                </div>
+                <div class="steps">
+                  <h1>installation</h1>
+                  <h3>Pencil us in! </h3>
+                  <p>Every element of our photo booths is assembled by us in our onsite workshop for quality assurance - and once ready, we’ll set a date to deliver, install and demo your brand-new bespoke booth.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- your customer -->
+            <div id="your-customer">
+              <div class="container">
+                <div class="row mb-lg-5 pb-4">
+                  <div class="col-sm-12 col-md-8 col-lg-8 vertical-al">
+                    <h1 class="main-heading ">Your customers become <span class="d-lg-block">  your influencers!</span></h1>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>Increased reach on Insta? Yes, please.</h3>
+                    <p>As your customers capture moments and print memories, you earn a profit, and when the snaps go social, your customers become your influencers!</p>
+                    <div >
+                      <a class="menu-btn text-black px-4 mt-4 mt-lg-5  mb-4"  href="#get-boots">See a booth in situ</a>
+                  </div>
+
+                  
+                  <!-- Modal -->
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slider -->
+            <div class="work-slider-first ">
+              <div class="customer-slider d-block d-md-none">
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/01.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/02.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/03.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/04.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/1.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/10.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/11.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/12.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/13.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/14.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/15.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/16.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/17.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/18.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/19.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/2.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/20.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/21.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/22.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/23.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/24.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/25.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/26.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/3.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/4.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/5.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/6.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/7.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/8.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/9.jfif" alt="">
+                </div>
+
+              </div>
+
+              <div class="customer-slider container d-none d-md-block">
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/01.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/02.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/03.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/04.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/1.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/10.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/11.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/12.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/13.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/14.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/15.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/16.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/17.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/18.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/19.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/2.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/20.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/21.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/22.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/23.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/24.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/25.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/26.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/3.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/4.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/5.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/6.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/7.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/8.jfif" alt="">
+                </div>
+                <div class="slide-img">
+                  <img src="./images/Photo slideshow/9.jfif" alt="">
+                </div>
+
+              </div>
+             </div>
+          </div>
+        </section>
+
+
+        <!-- your benefits -->
+        <section id="your-benefits">
+          <div class="benefits-bg">
+            <div class="container">
+              <div>
+                <h1 class="main-heading">Your Benefits</h1>
+                <p class="sub-title">Profit in your pocket, and that's only the beginning of our benefits…</p>
+                <p class="para">With our exclusive features, you add value to your venue; from marketing opportunities to customer retention.</p>
+              </div>
+
+              <!-- img -->
+              <div>
+                <div class="row mt-5">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-1">
+                      <p class="benefits-para">Zero up-front Cost</p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">Since our business operates on a profit share model, we don’t charge you any up-front cost for the design, build, delivery or demo of your bespoke photo booth. </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-2">
+                      <p class="benefits-para">Competitive Profit Share %</p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">Our profit share agreements are calculated on a venue-by-venue basis, ensuring that we offer the most competitive and fair percentage share for your business operations.  </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-3">
+                      <p class="benefits-para">GDPR Data Capture</p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">All our photo booths are installed with GDPR-compliant data capture, so when your customers download their photos, they upload their email directly to your CRM system.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-4">
+                      <p class="benefits-para">Hard copies and QR copies.</p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">Each printout features its own unique QR code. By scanning it, your customers can download the snap onto their smartphone and upload it straight to social.  </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-5">
+                      <p class="benefits-para">Speed Dial Support </p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">Our dedicated engineering team are here to help, all of our maintenance - from paper changes to software updates - is always speedy and free of charge. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="position-item item-6">
+                      <p class="benefits-para">Customisable and Chanagble Prints.</p>
+                      <div class="overlay-benefits">
+                        <p class="benefits-over-para">Student night on a Monday? And Jazz night Saturday? With our photo booths, you can interchange your template design regularly to reflect the different nights or events you host.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <a class="menu-btn text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Get a free booth</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- boots section -->
+        <section id="get-boots">
+          <div class="container boots-img">
+              <h1 class="main-heading d-none d-sm-block">Wondering what our booths <br> look like in situ?</h1>
+              <h1 class="main-heading d-block d-sm-none">Wondering what our    booths look like in situ?</h1>
+              <p>Every one of our business photo booths is built bespoke for the brand, check out our work in action</p>
+              <div class="text-left">
+                <a class="menu-btn-aqua text-black px-4 mt-5 mb-4"  onclick="modalAllBtn()">Get a free booth</a>
+            </div>
+          </div>
+          <div id="see-in-situ">
+            <!-- +boots sliider -->
+
+          <div class="work-slider-first d-block d-md-none">
+            <div class="customer-slider">
+              <div class="slide-img">
+                <img  onclick="modalAllBtn()" src="./images/Booth-slideshow/1.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/10.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/11.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/12.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/13.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/14.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/15.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/16.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/17.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/18.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/19.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/2.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/20.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/22.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/23.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/24.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/3.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/4.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/5.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/6.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/7.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/8.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/9.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/25.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/26.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/27.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/28.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/29.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/30.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/31.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/32.jpg" alt="">
+              </div>
+            </div>
+           </div>
+<!-- contact sm -->
+           <div class="work-slider-first container d-none d-md-block">
+            <div class="customer-slider">
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/1.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/10.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/11.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/12.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/13.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img  onclick="modalAllBtn()" src="./images/Booth-slideshow/14.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/15.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/16.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/17.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/18.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/19.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/2.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/20.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/21.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/22.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/23.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/24.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/3.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/4.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/5.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/6.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/7.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/8.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/9.jpeg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/25.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/26.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/27.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/28.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/29.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/30.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/31.jpg" alt="">
+              </div>
+              <div class="slide-img">
+                <img onclick="modalAllBtn()" src="./images/Booth-slideshow/32.jpg" alt="">
+              </div>
+            </div>
+           </div>
+          </div>
+        </section>
+
+        <!--  -->
+
+        <!-- paradiise world -->
+        <section id="paradise"  >
+          <div class="main-para-dise d-block d-lg-none">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-7 col-lg-8">
+                  <div class="paradise-left">
+                    <div class="paradise-content">
+                      <h3>Our Success Stories</h3>
+                      <h1>Paradise Skate World </h1>
+                      <p>Situated in Manchester’s Great Northern Warehouse in the heart of the city, you’ll find a brand new 4500 sq. ft wood-sprung roller-skate rink. Yet this is no ordinary roller skating – in fact, it’s altogether otherworldly.
+  
+                      <span class="d-block my-4 my-lg-5">
+                        Everything from the roller boots to the cocktails has absorbed the planetary theme, so when Paradise Skate World approached us for a custom-built photo booth, we knew our design would be no exception. We ensured it mirrored the same incredible interior, entering another dimension and providing its earthly visitors with a memento from their trip to this marvellous outer space world.
+                      </span></p>
+                    </div>
+  
+                    <div class="counter-paradise">
+                      <div class="counter-item d-flex flex-column flex-md-row">
+                        <div class="counter-left me-md-3">
+                          <div class="left-top">
+                            <h1><span class="counter">1100</span>+</h1>
+                            <p>PHOTOS PRINTED PER MONTH</p>
+                            <h1><span class="counter">900</span>+</h1>
+                            <p>GIFS SHARED TO EMAIL PER MONTH</p>
+                          </div>
+                        </div>
+                        <div class="counter-right">
+                          <div class="top-right">
+                            <h1><span class="counter">700</span>+</h1>
+                            <p>EMAIL ADDRESSES CAPTURED PER MONTH</p>
+                            <h1><span class="counter">74</span>%</h1>
+                            <p>EMAIL SHARE RATE</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="text-left pt-5 mt-4" id="counter-boots">
+                        <a class="menu-btn-aqua text-black px-4 mt-5 mb-4"  onclick="modalAllBtn()">Get a free booth</a>
+                    </div>
+                    </div>
+  
+  
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-4">
+                  <div class="paradise-right d-none d-md-block">
+                    <div class="paradise-slide">
+                      <div class="paradise-slide-img">
+                        <img src="./images/Content/content-4.jpeg" alt="">
+                      </div>
+                      <div class="paradise-slide-img">
+                        <img src="./images/Content/content-5.jpeg" alt="">
+                      </div>
+                      <div class="paradise-slide-img">
+                        <img src="./images/mistake1.jpeg" alt="">
+                      </div>
+                    </div>
+  
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-none d-lg-block">
+            <div class="lg-paradise ">
+              <div class="item-left-paradise">
+                <div class="paradise-left">
+                  <div class="paradise-content">
+                    <h3>Our Success Stories</h3>
+                    <h1>Paradise Skate World </h1>
+                    <p>Situated in Manchester’s Great Northern Warehouse in the heart of the city, you’ll find a brand new 4500 sq. ft wood-sprung roller-skate rink. Yet this is no ordinary roller skating – in fact, it’s altogether otherworldly.
+    
+                    <span class="d-block my-4 my-lg-5">
+                      Everything from the roller boots to the cocktails has absorbed the planetary theme, so when Paradise Skate World approached us for a custom-built photo booth, we knew our design would be no exception. We ensured it mirrored the same incredible interior, entering another dimension and providing its earthly visitors with a memento from their trip to this marvellous outer space world.
+                    </span></p>
+                  </div>
+    
+                  <div class="counter-paradise">
+                    <div class="counter-item d-flex flex-column flex-md-row">
+                      <div class="counter-left me-md-3">
+                        <div class="left-top">
+                          <h1><span class="counter">1100</span>+</h1>
+                          <p>PHOTOS PRINTED PER MONTH</p>
+                          <h1><span class="counter">900</span>+</h1>
+                          <p>GIFS SHARED TO EMAIL PER MONTH</p>
+                        </div>
+                      </div>
+                      <div class="counter-right">
+                        <div class="top-right">
+                          <h1><span class="counter">700</span>+</h1>
+                          <p>EMAIL ADDRESSES CAPTURED PER MONTH</p>
+                          <h1><span class="counter">74</span>%</h1>
+                          <p>EMAIL SHARE RATE</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="text-left pt-5 mt-4" id="counter-boots">
+                      <a class="menu-btn-aqua text-black px-4 mt-5 mb-4" onclick="modalAllBtn()">Get a free booth</a>
+                  </div>
+                  </div>
+    
+    
+                </div>
+              </div>
+              <div class="item-right-paradise">
+                <div class="paradise-slide ">
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/content-4.jpeg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/content-5.jpeg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/mistake1.jpeg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/benefis2.jpg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/benefits3.jpg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/benefits6.jpg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/content-2.jpeg" alt="">
+                  </div>
+                  <div class="item-right-paradise-img">
+                    <img src="./images/Content/content-3.jpeg" alt="">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section> 
+        
+
+        <!-- sm -->
+       
+          
+      </main>
+      
+
+      <!-- footer -->
+      <footer id="footer-part">
+        <div class="container">
+          <div class="row mb-md-5 pb-lg-5">
+            <div class="col-sm-12 col-md-6 col-lg-8">
+              <div class="footer-left">
+                <div>
+                  <img src="./images/logo.png" alt="">
+                </div>
+                <div>
+                  <p class="footer-para">For years we have worked closely with some of the UK’s top entertainment venues, delivering a photo booth they are proud to put their name on. Let’s start our partnership today.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 d-none d-md-block ">
+                  <div class="footer-item">
+                    <p class="footer-heading">PAGES</p>
+                    <div class="footer-page">
+                      <a href="index.html">Home</a>
+                      <a href="#how-we-work">How it works</a>
+                      <a href="#your-benefits">Your Benefits</a>
+                      <a href="#paradise">Case Studies</a>
+                      <a href="#our-three-steps">About Us</a>
+                      <a class="text-white-con" onclick="modalAllBtn()">Contact us</a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-sm-6 col-md-6 mt-5 pt-4 mt-md-0 pt-md-0 ">
+                  <div class="footer-item">
+                    <p class="footer-heading">COMPANY</p>
+                    <p class="footer-heading-right">VendNation
+                      Unit M Sapcote Trading Centre
+                      Witton, Birmingham B6 7BN</p>
+                      <!-- social icon link -->
+                      <div class="social-icon">
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+  
+                        <div>
+                          <a href=""><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                        <div>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div>
+                          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-none d-md-block">
+            <hr>
+            <p class="copy-right">© 2023, by VENDNATION, Inc. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      
+    
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/venobox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/close.js"></script>
+    <script src="js/boots.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/venubox.js"></script>
+
+    
+</body>
+</html>
